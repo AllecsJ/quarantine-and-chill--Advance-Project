@@ -1,0 +1,36 @@
+{
+  "name": "QuarantineChillApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "mocha function.test.js",
+    "test-watch": "nodemon --exec \"npm test\""
+  },
+  "engines": {
+    "node": "12.14.1"
+  },
+  "author": "Alex Jackson",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "firebase": "^7.8.0",
+    "firebase-tools": "^7.12.1",
+    "http": "0.0.0",
+    "jade": "^1.11.0",
+    "math": "0.0.3",
+    "moment": "^2.24.0",
+    "mustache": "^4.0.0",
+    "simple-peer": "^9.6.2",
+    "socket.io": "^2.3.0",
+    "sticky-session": "^1.1.2",
+    "watchify": "^3.11.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "expect": "^25.1.0",
+    "mocha": "^7.0.1"
+  }
+}
