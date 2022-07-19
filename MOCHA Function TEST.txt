@@ -1,0 +1,43 @@
+let expect = require('expect');
+
+
+
+// var {generateMessage} = require('message.js');
+//
+// //testing
+// describe('Generate Message', () => {
+//   it("should parse the test ---message", () => {
+//     let from = "SYNCAPP",
+//         text = "Test message",
+//         message = generateMessage(from, text);
+//
+//         expect(typeof message.createdAt).toBe('number');
+//         expect(message).toMatchObject({from, text});
+//   })
+// })
+
+var {newroom} = require('./server');
+
+describe('new room', () => {
+  it("should parse the room id as string", () =>{
+    let d = 'new room';
+
+    expect(typeof d).toBe('number');
+
+  })
+})
+
+
+var {sendMessage} = require('./server');
+
+describe('send message', () => {
+  it("should parse the room id as string", () =>{
+    let from = 'User',
+        text = 'test message',
+        message= genMessage()
+
+
+  expect(message).toMatchObject({from, text});
+
+  })
+})
